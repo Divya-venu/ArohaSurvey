@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroha – Data Foundations & Literacy</title>
+  <link rel="stylesheet" href="module2.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════  FIXED HEADER  ══════════════════════ -->
+<header id="top-header">
+  <div class="header-inner">
+    <img src="https://aroha.co.in/wp-content/uploads/2024/08/aroha_logo.png"
+         alt="Aroha" style="height:42px; object-fit:contain;"
+         onerror="this.outerHTML='<div style=\'display:flex;align-items:center;gap:8px\'><svg width=44 height=30 viewBox=\'0 0 52 36\' fill=none><polygon points=\'6,18 14,8 22,18 14,28\' fill=\'#C0392B\'/><polygon points=\'16,10 24,2 32,10 24,18\' fill=\'#E67E22\'/><polygon points=\'16,26 24,18 32,26 24,34\' fill=\'#27AE60\'/></svg><span style=\'font-size:22px;font-weight:900;color:#111;letter-spacing:-0.5px\'>AROHA</span></div>'"/>
+    <span class="header-phone">Call: +91 9886228615</span>
+  </div>
+</header>
+
+<!-- ══════════════════════  STEPPER  ══════════════════════ -->
+<div class="stepper-wrap">
+  <div class="stepper-inner">
+    <div class="stepper-row">
+      <div class="step-circle done">✓</div>
+      <div class="step-line done"></div>
+      <div class="step-circle active">2</div>
+      <div class="step-line"></div>
+      <div class="step-circle">3</div>
+      <div class="step-line"></div>
+      <div class="step-circle">4</div>
+      <div class="step-line"></div>
+      <div class="step-circle">5</div>
+      <div class="step-line"></div>
+      <div class="step-circle">6</div>
+    </div>
+    <div class="stepper-labels">
+      <span class="step-label done">Module 1</span>
+      <span class="step-label active">Module 2</span>
+      <span class="step-label">Module 3</span>
+      <span class="step-label">Module 4</span>
+      <span class="step-label">Module 5</span>
+      <span class="step-label">Report</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════  MAIN  ══════════════════════ -->
+<main class="main-wrap">
+  <div class="content-row">
+
+    <!-- LEFT: Questions -->
+    <div class="question-card">
+
+      <!-- Section title -->
+      <div class="section-title-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V156.69l50.34-50.35a8,8,0,0,1,11.32,0L128,132.69,180.69,80H160a8,8,0,0,1,0-16h40a8,8,0,0,1,8,8v40a8,8,0,0,1-16,0V91.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31l-56,56V200H224A8,8,0,0,1,232,208Z"></path></svg>
+        <div>
+          <h2 class="section-title">Data Foundations &amp; Literacy</h2>
+          <p class="section-sub">Assess your organization's data infrastructure, quality, and the data literacy of your workforce.</p>
+        </div>
+      </div>
+
+      <!-- Q1: Data Hygiene -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">1</div>
+          <div>
+            <p class="q-title">Data Hygiene</p>
+            <p class="q-sub">How consistently does your organization clean, validate, and maintain its core operational data sets?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q1" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">No Process</span></button>
+          <button class="scale-btn" data-q="q1" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Ad Hoc</span></button>
+          <button class="scale-btn" data-q="q1" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Standardised</span></button>
+          <button class="scale-btn" data-q="q1" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Robust</span></button>
+          <button class="scale-btn" data-q="q1" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Continuous</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q2: Data Accessibility -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">2</div>
+          <div>
+            <p class="q-title">Data Accessibility</p>
+            <p class="q-sub">Can the teams that need data access it easily, securely, and in a timely manner for decision-making?</p>
+          </div>
+        </div>
+        <div class="radio-col" id="q2-radio">
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="1"/>
+            <span class="opt-text">Siloed and difficult access.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="2"/>
+            <span class="opt-text">Request based access.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="3"/>
+            <span class="opt-text">Partial self-service access.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="4"/>
+            <span class="opt-text">Full self-service access.</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q3: Real-Time Velocity -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">3</div>
+          <div>
+            <p class="q-title">Real-Time Velocity</p>
+            <p class="q-sub">Does your organization have data pipelines capable of providing real-time or near-real-time insights to AI models?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q3" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Batch Only</span></button>
+          <button class="scale-btn" data-q="q3" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Near Real-Time</span></button>
+          <button class="scale-btn" data-q="q3" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Real-Time in Places</span></button>
+          <button class="scale-btn" data-q="q3" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Rapid</span></button>
+          <button class="scale-btn" data-q="q3" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Real-Time</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q4: Data Centralisation -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">4</div>
+          <div>
+            <p class="q-title">Data Centralisation</p>
+            <p class="q-sub">Is your organisation using any of the following data centralisation technologies, or planning to in the next year?</p>
+          </div>
+        </div>
+        <div class="check-grid" id="q4-check">
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Data Warehouse</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Subject to Policies</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Department Silos</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Hybrid Environment</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">On-Prem/Cloud Hybrid</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Unified Cloud-First Strategy</span></label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q5: Data Literacy/KPIs -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">5</div>
+          <div>
+            <p class="q-title">Data Literacy / KPIs</p>
+            <p class="q-sub">How data-literate are the non-technical employees across your organisation? Can they interpret dashboards and act on insights?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q5" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Low Awareness</span></button>
+          <button class="scale-btn" data-q="q5" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Some Training</span></button>
+          <button class="scale-btn" data-q="q5" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Moderate Fluency</span></button>
+          <button class="scale-btn" data-q="q5" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">High Proficiency</span></button>
+          <button class="scale-btn" data-q="q5" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Data-Driven Culture</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q6: Documentation / Metadata -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">6</div>
+          <div>
+            <p class="q-title">Documentation / Metadata</p>
+            <p class="q-sub">Does your organisation maintain data dictionaries, lineage maps, or governance documentation for its critical datasets?</p>
+          </div>
+        </div>
+        <textarea rows="4" placeholder="Describe your current documentation or metadata practices…" id="q6-text" oninput="onTextChange()"></textarea>
+      </div>
+
+      <!-- Next -->
+      <div class="btn-row">
+        <button class="btn-prev" onclick="window.location.href='../module1/module1.html'">
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Previous
+        </button>
+        <!-- <button class="btn-next" id="btn-next" onclick="goNext()"> -->
+        <button class="btn-next" onclick="sessionStorage.setItem('module2Score', computeScore()); window.location.href='../module3/module3.html'">
+          Next Module
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT: Sticky score -->
+    <div id="score-card">
+      <div class="score-inner">
+        <p class="score-label">Module Score</p>
+        <div class="score-circle">
+          <span id="score-display">0.0</span>
+        </div>
+        <p class="score-sub">out of 5.0</p>
+        <div class="score-progress-wrap">
+          <div class="score-progress-row">
+            <span class="score-progress-label">Questions Answered</span>
+            <span id="answered-count" class="score-progress-count">0/6</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width:0%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ══════════════════════  FOOTER  ══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="https://aroha.co.in/wp-content/uploads/2026/03/Aroha-White-1.png"
+           alt="Aroha"
+           style="height:34px;object-fit:contain;margin-bottom:14px;"
+           onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:14px;\'>AROHA</span>'"/>
+      <p class="footer-tagline">Empowering organizations to measure, understand, and accelerate their AI transformation journey with data-driven insights.</p>
+    </div>
+    <div>
+      <p class="footer-contact-title">Contact</p>
+      <p class="footer-contact-text">Jayanagar, Bengaluru, Karnataka 560041</p>
+      <p class="footer-contact-text">hr@aroha.co.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Aroha Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="module2.js"></script>
+</body>
+</html>
