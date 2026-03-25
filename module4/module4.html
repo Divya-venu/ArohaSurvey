@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroha – Governance, Risk &amp; Ethics</title>
+  <link rel="stylesheet" href="module4.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════  FIXED HEADER  ══════════════════════ -->
+<header id="top-header">
+  <div class="header-inner">
+    <img src="https://aroha.co.in/wp-content/uploads/2024/08/aroha_logo.png"
+         alt="Aroha" style="height:42px; object-fit:contain;"
+         onerror="this.outerHTML='<div style=\'display:flex;align-items:center;gap:8px\'><svg width=44 height=30 viewBox=\'0 0 52 36\' fill=none><polygon points=\'6,18 14,8 22,18 14,28\' fill=\'#C0392B\'/><polygon points=\'16,10 24,2 32,10 24,18\' fill=\'#E67E22\'/><polygon points=\'16,26 24,18 32,26 24,34\' fill=\'#27AE60\'/></svg><span style=\'font-size:22px;font-weight:900;color:#111;letter-spacing:-0.5px\'>AROHA</span></div>'"/>
+    <span class="header-phone">Call: +91 9886228615</span>
+  </div>
+</header>
+
+<!-- ══════════════════════  STEPPER  ══════════════════════ -->
+<div class="stepper-wrap">
+  <div class="stepper-inner">
+    <div class="stepper-row">
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle active">4</div>
+      <div class="step-line"></div>
+      <div class="step-circle">5</div>
+      <div class="step-line"></div>
+      <div class="step-circle">6</div>
+    </div>
+    <div class="stepper-labels">
+      <span class="step-label done">Module 1</span>
+      <span class="step-label done">Module 2</span>
+      <span class="step-label done">Module 3</span>
+      <span class="step-label active">Module 4</span>
+      <span class="step-label">Module 5</span>
+      <span class="step-label">Report</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════  MAIN  ══════════════════════ -->
+<main class="main-wrap">
+  <div class="content-row">
+
+    <!-- LEFT: Questions -->
+    <div class="question-card">
+
+      <!-- Section title -->
+      <div class="section-title-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M236.8,188.09,149.35,36.22h0a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM222.93,203.8a8.5,8.5,0,0,1-7.48,4.2H40.55a8.5,8.5,0,0,1-7.48-4.2,7.59,7.59,0,0,1,0-7.72L120.52,44.21a8.75,8.75,0,0,1,15,0l87.45,151.87A7.59,7.59,0,0,1,222.93,203.8ZM120,144V104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,180Z"></path></svg>
+        <div>
+          <h2 class="section-title">Governance, Risk &amp; Ethics</h2>
+          <p class="section-sub">Assess your organisation's framework for managing practices, and mitigate AI-related risk in principle.</p>
+        </div>
+      </div>
+
+      <!-- Q1: Data Sovereignty -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">1</div>
+          <div>
+            <p class="q-title">Data Sovereignty</p>
+            <p class="q-sub">How well does your organisation manage and control your organisation's data handling and storage?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q1" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">No Oversight</span></button>
+          <button class="scale-btn" data-q="q1" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Basic Policies</span></button>
+          <button class="scale-btn" data-q="q1" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Data Classified</span></button>
+          <button class="scale-btn" data-q="q1" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Enforced Controls</span></button>
+          <button class="scale-btn" data-q="q1" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Sovereign Policies</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q2: AI Bias Policy -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">2</div>
+          <div>
+            <p class="q-title">AI Bias Policy</p>
+            <p class="q-sub">Does your organisation have a policy governing or responding to AI model bias or discrimination — (Equity)?</p>
+          </div>
+        </div>
+        <div class="radio-col" id="q2-radio">
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="1"/>
+            <span class="opt-text">No formal policy exists and Employees act without formal guidance.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="2"/>
+            <span class="opt-text">Basic documented programme policies are in active bias control.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="3"/>
+            <span class="opt-text">AI bias guidelines regulate employees' AI output.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="4"/>
+            <span class="opt-text">Proactive bias mitigation with AI monitoring and compliance.</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q3: Model Transparency -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">3</div>
+          <div>
+            <p class="q-title">Model Transparency</p>
+            <p class="q-sub">How explainable are the AI decisions made by your AI systems to the users?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q3" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Black Box</span></button>
+          <button class="scale-btn" data-q="q3" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Unexplained</span></button>
+          <button class="scale-btn" data-q="q3" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Partial Visibility</span></button>
+          <button class="scale-btn" data-q="q3" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Explainable Notes</span></button>
+          <button class="scale-btn" data-q="q3" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Full Transparency</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q4: AI Copyright Protection -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">4</div>
+          <div>
+            <p class="q-title">AI Copyright Protection</p>
+            <p class="q-sub">How does your organisation protect intellectual property and copyright in the use of generative AI tools?</p>
+          </div>
+        </div>
+        <div class="check-grid" id="q4-check">
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">AI Systems that do not collect or retain usage data</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Licensing checks for all AI-generated content usage</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Employee Opt-Out Policy</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Legal review for all AI-produced content before publication</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Removes use of sensitive third-party data</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Contractual protections for third-party data in application guidelines</span></label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q5: Hallucination Management -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">5</div>
+          <div>
+            <p class="q-title">Hallucination Management</p>
+            <p class="q-sub">Does your organisation have controls to reduce or validate AI model outputs?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q5" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Auto-Accept</span></button>
+          <button class="scale-btn" data-q="q5" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Unvalidated Output</span></button>
+          <button class="scale-btn" data-q="q5" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Mined Prompt</span></button>
+          <button class="scale-btn" data-q="q5" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Human Oversight</span></button>
+          <button class="scale-btn" data-q="q5" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Governed Validation</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q6: Compliance Audit -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">6</div>
+          <div>
+            <p class="q-title">Compliance Audit</p>
+            <p class="q-sub">Does your organisation conduct AI regulatory or EU AI Act compliance audits?</p>
+          </div>
+        </div>
+        <textarea rows="4" placeholder="Describe how frequently your organisation conducts AI compliance and regulatory audits…" id="q6-text" oninput="onTextChange()"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <button class="btn-prev" onclick="window.location.href='../module3/module3.html'">
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Previous
+        </button>
+        <button class="btn-next" onclick="sessionStorage.setItem('module4Score', computeScore()); window.location.href='../module5/module5.html'">
+          Next Module
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Sticky score -->
+    <div id="score-card">
+      <div class="score-inner">
+        <p class="score-label">Module Score</p>
+        <div class="score-circle">
+          <span id="score-display">0.0</span>
+        </div>
+        <p class="score-sub">out of 5.0</p>
+        <div class="score-progress-wrap">
+          <div class="score-progress-row">
+            <span class="score-progress-label">Questions Answered</span>
+            <span id="answered-count" class="score-progress-count">0/6</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width:0%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ══════════════════════  FOOTER  ══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="https://aroha.co.in/wp-content/uploads/2026/03/Aroha-White-1.png"
+           alt="Aroha"
+           style="height:34px;object-fit:contain;margin-bottom:14px;"
+           onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:14px;\'>AROHA</span>'"/>
+      <p class="footer-tagline">Empowering organizations to measure, understand, and accelerate their AI transformation journey with data-driven insights.</p>
+    </div>
+    <div>
+      <p class="footer-contact-title">Contact</p>
+      <p class="footer-contact-text">Jayanagar, Bengaluru, Karnataka 560041</p>
+      <p class="footer-contact-text">hr@aroha.co.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Aroha Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="module4.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroha – Technical Architecture & Infrastructure</title>
+  <link rel="stylesheet" href="module3.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════  FIXED HEADER  ══════════════════════ -->
+<header id="top-header">
+  <div class="header-inner">
+    <img src="https://aroha.co.in/wp-content/uploads/2024/08/aroha_logo.png"
+         alt="Aroha" style="height:42px; object-fit:contain;"
+         onerror="this.outerHTML='<div style=\'display:flex;align-items:center;gap:8px\'><svg width=44 height=30 viewBox=\'0 0 52 36\' fill=none><polygon points=\'6,18 14,8 22,18 14,28\' fill=\'#C0392B\'/><polygon points=\'16,10 24,2 32,10 24,18\' fill=\'#E67E22\'/><polygon points=\'16,26 24,18 32,26 24,34\' fill=\'#27AE60\'/></svg><span style=\'font-size:22px;font-weight:900;color:#111;letter-spacing:-0.5px\'>AROHA</span></div>'"/>
+    <span class="header-phone">Call: +91 9886228615</span>
+  </div>
+</header>
+
+<!-- ══════════════════════  STEPPER  ══════════════════════ -->
+<div class="stepper-wrap">
+  <div class="stepper-inner">
+    <div class="stepper-row">
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle active">3</div>
+      <div class="step-line"></div>
+      <div class="step-circle">4</div>
+      <div class="step-line"></div>
+      <div class="step-circle">5</div>
+      <div class="step-line"></div>
+      <div class="step-circle">6</div>
+    </div>
+    <div class="stepper-labels">
+      <span class="step-label done">Module 1</span>
+      <span class="step-label done">Module 2</span>
+      <span class="step-label active">Module 3</span>
+      <span class="step-label">Module 4</span>
+      <span class="step-label">Module 5</span>
+      <span class="step-label">Report</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════  MAIN  ══════════════════════ -->
+<main class="main-wrap">
+  <div class="content-row">
+
+    <!-- LEFT: Questions -->
+    <div class="question-card">
+
+      <!-- Section title -->
+      <div class="section-title-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+        <div>
+          <h2 class="section-title">Technical Architecture &amp; Infrastructure</h2>
+          <p class="section-sub">Evaluate your organisation's technical tools and capabilities for implementing AI at scale in your ecosystem.</p>
+        </div>
+      </div>
+
+      <!-- Q1: API Readiness -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">1</div>
+          <div>
+            <p class="q-title">API Readiness</p>
+            <p class="q-sub">How well are your existing core systems (ERP, CRM, etc.) exposed via APIs for data sharing and automation?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q1" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Legacy</span></button>
+          <button class="scale-btn" data-q="q1" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Partial APIs</span></button>
+          <button class="scale-btn" data-q="q1" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Core APIs Live</span></button>
+          <button class="scale-btn" data-q="q1" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Governed</span></button>
+          <button class="scale-btn" data-q="q1" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Mature</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q2: Cloud Maturity -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">2</div>
+          <div>
+            <p class="q-title">Cloud Maturity</p>
+            <p class="q-sub">What best describes your organisation's primary hosting, compute, or on-premises infrastructure footprint?</p>
+          </div>
+        </div>
+        <div class="radio-col" id="q2-radio">
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="1"/>
+            <span class="opt-text">Primarily on-premises with limited cloud infrastructure.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="2"/>
+            <span class="opt-text">Mix of on-premise and cloud (Hybrid Infrastructure).</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="3"/>
+            <span class="opt-text">Most workloads run on virtual environments.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="4"/>
+            <span class="opt-text">Infrastructure is fully cloud-native, across all services (e.g. AWS, Azure, or GCP).</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q3: Scalability -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">3</div>
+          <div>
+            <p class="q-title">Scalability</p>
+            <p class="q-sub">Can your current infrastructure scale up or down rapidly to support AI model training and inference loads?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q3" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Inflexible</span></button>
+          <button class="scale-btn" data-q="q3" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Limited Scaling</span></button>
+          <button class="scale-btn" data-q="q3" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Moderate Elastic</span></button>
+          <button class="scale-btn" data-q="q3" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Automated Scaling</span></button>
+          <button class="scale-btn" data-q="q3" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Elastic Infrastructure</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q4: Computing Resources -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">4</div>
+          <div>
+            <p class="q-title">Computing Resources</p>
+            <p class="q-sub">Which compute resources does your organisation currently have access to for AI training?</p>
+          </div>
+        </div>
+        <div class="check-grid" id="q4-check">
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">No dedicated GPU or accelerated compute</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Cloud-based GPU instances (AWS/Azure/GCP)</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">High-performance CPUs for data processing</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Cloud-to-Edge deployment via AWS/Azure/GCP</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Dedicated GPUs for AI infrastructure</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Dedicated compute clusters</span></label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q5: Cybersecurity Posture -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">5</div>
+          <div>
+            <p class="q-title">Cybersecurity Posture</p>
+            <p class="q-sub">How prepared is your organisation for identifying AI-specific security risks and vulnerabilities?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q5" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Basic Security</span></button>
+          <button class="scale-btn" data-q="q5" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Standard Aware</span></button>
+          <button class="scale-btn" data-q="q5" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Proactive Security</span></button>
+          <button class="scale-btn" data-q="q5" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">AI-Risk Aware</span></button>
+          <button class="scale-btn" data-q="q5" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Zero-Trust Security</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q6: Testing Integration -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">6</div>
+          <div>
+            <p class="q-title">Testing Integration</p>
+            <p class="q-sub">Does your team use CI/CD pipelines to test and deploy AI/ML workloads and applications?</p>
+          </div>
+        </div>
+        <textarea rows="4" placeholder="Describe your current testing and deployment integration practices…" id="q6-text" oninput="onTextChange()"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <button class="btn-prev" onclick="window.location.href='../module2/module2.html'">
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Previous
+        </button>
+        <button class="btn-next" onclick="sessionStorage.setItem('module3Score', computeScore()); window.location.href='../module4/module4.html'">
+          Next Module
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Sticky score -->
+    <div id="score-card">
+      <div class="score-inner">
+        <p class="score-label">Module Score</p>
+        <div class="score-circle">
+          <span id="score-display">0.0</span>
+        </div>
+        <p class="score-sub">out of 5.0</p>
+        <div class="score-progress-wrap">
+          <div class="score-progress-row">
+            <span class="score-progress-label">Questions Answered</span>
+            <span id="answered-count" class="score-progress-count">0/6</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width:0%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ══════════════════════  FOOTER  ══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="https://aroha.co.in/wp-content/uploads/2026/03/Aroha-White-1.png"
+           alt="Aroha"
+           style="height:34px;object-fit:contain;margin-bottom:14px;"
+           onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:14px;\'>AROHA</span>'"/>
+      <p class="footer-tagline">Empowering organizations to measure, understand, and accelerate their AI transformation journey with data-driven insights.</p>
+    </div>
+    <div>
+      <p class="footer-contact-title">Contact</p>
+      <p class="footer-contact-text">Jayanagar, Bengaluru, Karnataka 560041</p>
+      <p class="footer-contact-text">hr@aroha.co.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Aroha Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="module3.js"></script>
+</body>
+</html>

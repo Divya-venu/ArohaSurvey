@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroha – Culture &amp; Talent Readiness</title>
+  <link rel="stylesheet" href="module5.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════  FIXED HEADER  ══════════════════════ -->
+<header id="top-header">
+  <div class="header-inner">
+    <img src="https://aroha.co.in/wp-content/uploads/2024/08/aroha_logo.png"
+         alt="Aroha" style="height:42px; object-fit:contain;"
+         onerror="this.outerHTML='<div style=\'display:flex;align-items:center;gap:8px\'><svg width=44 height=30 viewBox=\'0 0 52 36\' fill=none><polygon points=\'6,18 14,8 22,18 14,28\' fill=\'#C0392B\'/><polygon points=\'16,10 24,2 32,10 24,18\' fill=\'#E67E22\'/><polygon points=\'16,26 24,18 32,26 24,34\' fill=\'#27AE60\'/></svg><span style=\'font-size:22px;font-weight:900;color:#111;letter-spacing:-0.5px\'>AROHA</span></div>'"/>
+    <span class="header-phone">Call: +91 9886228615</span>
+  </div>
+</header>
+
+<!-- ══════════════════════  STEPPER  ══════════════════════ -->
+<div class="stepper-wrap">
+  <div class="stepper-inner">
+    <div class="stepper-row">
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle done">&#10003;</div>
+      <div class="step-line done"></div>
+      <div class="step-circle active">5</div>
+      <div class="step-line"></div>
+      <div class="step-circle">6</div>
+    </div>
+    <div class="stepper-labels">
+      <span class="step-label done">Module 1</span>
+      <span class="step-label done">Module 2</span>
+      <span class="step-label done">Module 3</span>
+      <span class="step-label done">Module 4</span>
+      <span class="step-label active">Module 5</span>
+      <span class="step-label">Report</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════  MAIN  ══════════════════════ -->
+<main class="main-wrap">
+  <div class="content-row">
+
+    <!-- LEFT: Questions -->
+    <div class="question-card">
+
+      <!-- Section title -->
+      <div class="section-title-row">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path></svg>
+        <div>
+          <h2 class="section-title">Culture &amp; Talent Readiness</h2>
+          <p class="section-sub">Evaluate your organisation's AI culture talent acquisition, and change management capabilities.</p>
+        </div>
+      </div>
+
+      <!-- Q1: Internal Strategy -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">1</div>
+          <div>
+            <p class="q-title">Internal Strategy</p>
+            <p class="q-sub">How well does your organisation articulate and communicate its AI strategy to employees and stakeholders?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q1" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">No Awareness</span></button>
+          <button class="scale-btn" data-q="q1" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Team Awareness</span></button>
+          <button class="scale-btn" data-q="q1" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Partly Articulate</span></button>
+          <button class="scale-btn" data-q="q1" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Broad Advocacy</span></button>
+          <button class="scale-btn" data-q="q1" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">AI Program</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q2: Digital Talent -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">2</div>
+          <div>
+            <p class="q-title">Digital Talent</p>
+            <p class="q-sub">Does your team have the AI or data science skills to develop, manage or evaluate AI tools for your organisation?</p>
+          </div>
+        </div>
+        <div class="radio-col" id="q2-radio">
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="1"/>
+            <span class="opt-text">No AI/ML or data science expertise in-house.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="2"/>
+            <span class="opt-text">Some programmers or AI/data science advocates.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="3"/>
+            <span class="opt-text">Basic education in Python, data engineering, or ML/Algorithm.</span>
+          </label>
+          <label class="radio-option" onclick="selectRadio(this,'q2')">
+            <input type="radio" name="q2" value="4"/>
+            <span class="opt-text">Dedicated AI practitioners or robust talent ecosystem in place.</span>
+          </label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q3: Change Management -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">3</div>
+          <div>
+            <p class="q-title">Change Management</p>
+            <p class="q-sub">How effectively does your organisation plan and support the transition to AI tools and processes?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q3" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">No Change Plan</span></button>
+          <button class="scale-btn" data-q="q3" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Ad hoc Changes</span></button>
+          <button class="scale-btn" data-q="q3" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Managed Change</span></button>
+          <button class="scale-btn" data-q="q3" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Structured &amp; Iterative</span></button>
+          <button class="scale-btn" data-q="q3" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Continuous Adaptation</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q4: Upskilling/Budget -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">4</div>
+          <div>
+            <p class="q-title">Upskilling / Budget</p>
+            <p class="q-sub">Does your organisation support or fund training/upskilling programmes related to AI tools and literacy?</p>
+          </div>
+        </div>
+        <div class="check-grid" id="q4-check">
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">No dedicated learning budget</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Org pays and mandates AI wellness</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Online courses and self-paced access</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Supports accreditation and learning pathways</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Dedicated learning programme</span></label>
+          <label class="check-option"><input type="checkbox" onchange="toggleCheck(this)"><span class="opt-text">Org invests in accreditation and training strategy</span></label>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q5: Leadership Sentiment -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">5</div>
+          <div>
+            <p class="q-title">Leadership Sentiment</p>
+            <p class="q-sub">How supportive is senior leadership towards adopting and investing in AI transformation?</p>
+          </div>
+        </div>
+        <div class="scale-row">
+          <button class="scale-btn" data-q="q5" data-v="1" onclick="selectScale(this)"><span class="num">1</span><span class="lbl">Strong Rejection</span></button>
+          <button class="scale-btn" data-q="q5" data-v="2" onclick="selectScale(this)"><span class="num">2</span><span class="lbl">Skepticism</span></button>
+          <button class="scale-btn" data-q="q5" data-v="3" onclick="selectScale(this)"><span class="num">3</span><span class="lbl">Moderate/Cautious</span></button>
+          <button class="scale-btn" data-q="q5" data-v="4" onclick="selectScale(this)"><span class="num">4</span><span class="lbl">Mostly Supportive</span></button>
+          <button class="scale-btn" data-q="q5" data-v="5" onclick="selectScale(this)"><span class="num">5</span><span class="lbl">Advocates</span></button>
+        </div>
+      </div>
+
+      <hr class="q-divider"/>
+
+      <!-- Q6: Employee Sentiment -->
+      <div class="q-block">
+        <div class="q-header">
+          <div class="q-badge">6</div>
+          <div>
+            <p class="q-title">Employee Sentiment</p>
+            <p class="q-sub">How would you describe your employees' overall sentiment and attitude towards AI adoption?</p>
+          </div>
+        </div>
+        <textarea rows="4" placeholder="Describe your employees' general sentiment and readiness for AI tools and processes…" id="q6-text" oninput="onTextChange()"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <button class="btn-prev" onclick="window.location.href='../module4/module4.html'">
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Previous
+        </button>
+        <button class="btn-next" onclick="sessionStorage.setItem('module5Score', computeScore());window.location.href='../module6/module6.html'">
+          Submit &amp; Get Report
+          <svg style="width:16px;height:16px;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Sticky score -->
+    <div id="score-card">
+      <div class="score-inner">
+        <p class="score-label">Module Score</p>
+        <div class="score-circle">
+          <span id="score-display">0.0</span>
+        </div>
+        <p class="score-sub">out of 5.0</p>
+        <div class="score-progress-wrap">
+          <div class="score-progress-row">
+            <span class="score-progress-label">Questions Answered</span>
+            <span id="answered-count" class="score-progress-count">0/6</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width:0%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ══════════════════════  FOOTER  ══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="https://aroha.co.in/wp-content/uploads/2026/03/Aroha-White-1.png"
+           alt="Aroha"
+           style="height:34px;object-fit:contain;margin-bottom:14px;"
+           onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#fff;display:block;margin-bottom:14px;\'>AROHA</span>'"/>
+      <p class="footer-tagline">Empowering organizations to measure, understand, and accelerate their AI transformation journey with data-driven insights.</p>
+    </div>
+    <div>
+      <p class="footer-contact-title">Contact</p>
+      <p class="footer-contact-text">Jayanagar, Bengaluru, Karnataka 560041</p>
+      <p class="footer-contact-text">hr@aroha.co.in</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Aroha Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="module5.js"></script>
+</body>
+</html>

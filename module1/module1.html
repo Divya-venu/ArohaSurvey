@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aroha – Strategy & Business Alignment</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="module1.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════  REGISTRATION MODAL  ══════════════════════ -->
+  <div id="reg-modal">
+    <div id="reg-card">
+
+      <!-- Header -->
+      <div class="reg-header">
+        <div class="reg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#e5693b" viewBox="0 0 256 256"><path d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-24,16v24H116V152ZM80,164a12,12,0,0,1,12-12h8v24H92A12,12,0,0,1,80,164Zm84,12h-8V152h8a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"></path></svg>
+ 
+        </div>
+        <div>
+          <h2 class="reg-title">AI Readiness Assessment</h2>
+          <p class="reg-subtitle">Please fill in your details to get your personalised report.</p>
+        </div>
+      </div>
+
+      <!-- Form Grid -->
+      <div class="reg-grid">
+
+        <div class="reg-field">
+          <label class="reg-label">Full Name <span class="req">*</span></label>
+          <input class="reg-input" id="reg-name" type="text" placeholder="Enter your full name"/>
+          <p class="reg-error" id="err-name">Please enter your name.</p>
+        </div>
+
+        <div class="reg-field">
+          <label class="reg-label">Company Name <span class="req">*</span></label>
+          <input class="reg-input" id="reg-company" type="text" placeholder="Enter company name"/>
+          <p class="reg-error" id="err-company">Please enter your company.</p>
+        </div>
+
+        <div class="reg-field">
+          <label class="reg-label">Email Address <span class="req">*</span></label>
+          <input class="reg-input" id="reg-email" type="email" placeholder="Enter your email"/>
+          <p class="reg-error" id="err-email">Enter a valid email address.</p>
+        </div>
+
+        <div class="reg-field">
+          <label class="reg-label">Phone Number <span class="req">*</span></label>
+          <input class="reg-input" id="reg-phone" type="tel" placeholder="Enter your phone number"/>
+          <p class="reg-error" id="err-phone">Please enter your phone number.</p>
+        </div>
+
+      </div>
+
+      <!-- CTA Button -->
+      <button class="btn-start" id="btn-start-assessment">
+        Start AI Readiness Check
+      </button>
+
+      <p class="reg-note">Your information is kept confidential and used only for this report.</p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════  FIXED HEADER  ══════════════════════ -->
+  <header id="top-header">
+    <div class="header-inner">
+      <img
+        src="https://aroha.co.in/wp-content/uploads/2024/08/aroha_logo.png"
+        alt="Aroha"
+        class="header-logo"
+        onerror="this.outerHTML='<div class=\'logo-fallback\'><svg width=44 height=30 viewBox=\'0 0 52 36\' fill=none><polygon points=\'6,18 14,8 22,18 14,28\' fill=\'#C0392B\'/><polygon points=\'16,10 24,2 32,10 24,18\' fill=\'#E67E22\'/><polygon points=\'16,26 24,18 32,26 24,34\' fill=\'#27AE60\'/></svg><span>AROHA</span></div>'"
+      />
+      <span class="header-phone">Call: +91 9886228615</span>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════  STEPPER  ══════════════════════ -->
+  <div class="stepper-wrap">
+    <div class="stepper-inner">
+
+      <div class="stepper-circles">
+        <div class="step-circle active">1</div>
+        <div class="step-line"></div>
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+        <div class="step-circle">4</div>
+        <div class="step-line"></div>
+        <div class="step-circle">5</div>
+        <div class="step-line"></div>
+        <div class="step-circle">6</div>
+      </div>
+
+      <div class="stepper-labels">
+        <span class="step-label active">Module 1</span>
+        <span class="step-label">Module 2</span>
+        <span class="step-label">Module 3</span>
+        <span class="step-label">Module 4</span>
+        <span class="step-label">Module 5</span>
+        <span class="step-label">Report</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════  MAIN  ══════════════════════ -->
+  <main class="main-layout">
+    <div class="content-row">
+
+      <!-- ── LEFT: Questions Panel ── -->
+      <div class="questions-panel">
+
+        <!-- Section Title -->
+        <div class="section-title-row">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"></path></svg>
+          <div>
+            <h2 class="section-title">Strategy &amp; Business Alignment</h2>
+            <p class="section-desc">Evaluate how well AI initiatives align with your organization's strategic objectives and business goals.</p>
+          </div>
+        </div>
+
+        <!-- Q1 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">1</div>
+            <div>
+              <p class="q-title">AI Integration Goal</p>
+              <p class="q-desc">Does your organization have a clearly defined objective for AI (e.g., cost reduction, revenue growth, or CX)?</p>
+            </div>
+          </div>
+          <div class="scale-row">
+            <button class="scale-btn" data-q="q1" data-v="1"><span class="num">1</span><span class="lbl">Undefined</span></button>
+            <button class="scale-btn" data-q="q1" data-v="2"><span class="num">2</span><span class="lbl">Opportunistic</span></button>
+            <button class="scale-btn" data-q="q1" data-v="3"><span class="num">3</span><span class="lbl">Defined</span></button>
+            <button class="scale-btn" data-q="q1" data-v="4"><span class="num">4</span><span class="lbl">Measurable</span></button>
+            <button class="scale-btn" data-q="q1" data-v="5"><span class="num">5</span><span class="lbl">Enterprise-Wide</span></button>
+          </div>
+        </div>
+
+        <hr class="q-divider"/>
+
+        <!-- Q2 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">2</div>
+            <div>
+              <p class="q-title">Executive Sponsorship</p>
+              <p class="q-desc">How active is your C-Suite in promoting and funding AI initiatives?</p>
+            </div>
+          </div>
+          <div class="radio-group" id="q2-radio">
+            <label class="radio-option">
+              <input type="radio" name="q2" value="1"/>
+              <span class="opt-text">AI efforts are department-led with little executive support.</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="q2" value="2"/>
+              <span class="opt-text">Leadership supports AI verbally but with limited funding.</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="q2" value="3"/>
+              <span class="opt-text">Executives guide AI initiatives and allocate defined budgets.</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="q2" value="4"/>
+              <span class="opt-text">AI is executive-led with sustained funding and clear ownership.</span>
+            </label>
+          </div>
+        </div>
+
+        <hr class="q-divider"/>
+
+        <!-- Q3 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">3</div>
+            <div>
+              <p class="q-title">Use Case Pipeline</p>
+              <p class="q-desc">Have you identified 3+ specific business processes that are ready for AI automation?</p>
+            </div>
+          </div>
+          <div class="scale-row">
+            <button class="scale-btn" data-q="q3" data-v="1"><span class="num">1</span><span class="lbl">None Identified</span></button>
+            <button class="scale-btn" data-q="q3" data-v="2"><span class="num">2</span><span class="lbl">Early Exploration</span></button>
+            <button class="scale-btn" data-q="q3" data-v="3"><span class="num">3</span><span class="lbl">Standardized</span></button>
+            <button class="scale-btn" data-q="q3" data-v="4"><span class="num">4</span><span class="lbl">Prioritized</span></button>
+            <button class="scale-btn" data-q="q3" data-v="5"><span class="num">5</span><span class="lbl">Execution-Ready</span></button>
+          </div>
+        </div>
+
+        <hr class="q-divider"/>
+
+        <!-- Q4 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">4</div>
+            <div>
+              <p class="q-title">Investment Horizon</p>
+              <p class="q-desc">Is your AI budget structured as a long-term investment or a one-time experimental cost?</p>
+            </div>
+          </div>
+          <div class="check-grid" id="q4-check">
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">No Dedicated Budget</span></label>
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">Pilot-Based Funding</span></label>
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">Project-Specific Allocation</span></label>
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">Annual Innovation Budget</span></label>
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">Multi-Year Strategic Investment</span></label>
+            <label class="check-option"><input type="checkbox"/><span class="opt-text">Enterprise Transformation Program</span></label>
+          </div>
+        </div>
+
+        <hr class="q-divider"/>
+
+        <!-- Q5 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">5</div>
+            <div>
+              <p class="q-title">Competitive Benchmarking</p>
+              <p class="q-desc">Do you have a clear understanding of how your direct competitors are currently utilizing AI?</p>
+            </div>
+          </div>
+          <div class="scale-row">
+            <button class="scale-btn" data-q="q5" data-v="1"><span class="num">1</span><span class="lbl">Not measured</span></button>
+            <button class="scale-btn" data-q="q5" data-v="2"><span class="num">2</span><span class="lbl">Informal Awareness</span></button>
+            <button class="scale-btn" data-q="q5" data-v="3"><span class="num">3</span><span class="lbl">Basic KPIs</span></button>
+            <button class="scale-btn" data-q="q5" data-v="4"><span class="num">4</span><span class="lbl">Comprehensive</span></button>
+            <button class="scale-btn" data-q="q5" data-v="5"><span class="num">5</span><span class="lbl">Predictive</span></button>
+          </div>
+        </div>
+
+        <hr class="q-divider"/>
+
+        <!-- Q6 -->
+        <div class="question-block">
+          <div class="q-header">
+            <div class="q-badge">6</div>
+            <div>
+              <p class="q-title">Success Metrics (KPIs)</p>
+              <p class="q-desc">Have you defined how you will measure AI success (e.g., hours saved, error reduction, or ROI)?</p>
+            </div>
+          </div>
+          <textarea id="q6-text" rows="4" placeholder="Describe your main strategic challenge…"></textarea>
+        </div>
+
+        <!-- Next Button -->
+        <div class="next-row">
+          <button class="btn-next" id="btn-next">
+            Next Module
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+
+      </div><!-- end questions-panel -->
+
+
+      <!-- ── RIGHT: Sticky Score Card ── -->
+      <div id="score-card">
+        <div class="score-card-inner">
+          <p class="score-card-title">Module Score</p>
+
+          <div class="score-circle">
+            <span id="score-display">0.0</span>
+          </div>
+          <p class="score-out-of">out of 5.0</p>
+
+          
+
+          <div class="score-progress-wrap">
+            <div class="score-progress-row">
+              <span class="score-progress-label">Questions Answered</span>
+              <span id="answered-count" class="score-progress-count">0/6</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- ══════════════════════  FOOTER  ══════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <img
+          src="https://aroha.co.in/wp-content/uploads/2026/03/Aroha-White-1.png"
+          alt="Aroha"
+          class="footer-logo"
+          onerror="this.outerHTML='<span class=\'footer-logo-text\'>AROHA</span>'"
+        />
+        <p class="footer-desc">Empowering organizations to measure, understand, and accelerate their AI transformation journey with data-driven insights.</p>
+      </div>
+      <div>
+        <p class="footer-contact-title">Contact</p>
+        <p class="footer-contact-text">Jayanagar, Bengaluru, Karnataka 560041</p>
+        <p class="footer-contact-text">hr@aroha.co.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aroha Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="module1.js"></script>
+
+</body>
+</html>
